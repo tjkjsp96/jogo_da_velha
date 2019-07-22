@@ -19,10 +19,10 @@ header{
 }
 
 div{
-    height: 15vw;
-    width: 15vw;
-    max-height: 110px;
-    max-width: 110px;
+    background-color: white;
+    margin: 10px;
+    height: 100px;
+    width: 100px;
     box-sizing: border-box;
     background-position: center;
     background-repeat: no-repeat;
