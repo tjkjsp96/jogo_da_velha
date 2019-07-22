@@ -1,13 +1,7 @@
 let player1 = "X";
 let player2 = "O";
 let playTime = player1;
-let gameOver = false;
 let images = new Array();
-
-let sequence = [];
-let actualRound = 0;
-let seqPos = 0;
-
 
 preloadImages("imagens/x.png","imagens/o.png")			
 atualizaMostrador();
@@ -22,8 +16,6 @@ function preloadImages(){
 
 
 function atualizaMostrador(){
-
-	if (gameOver) { return;}
 
 	if (playTime == player1) {
 		let player = document.querySelectorAll("header img")[0];
@@ -47,10 +39,6 @@ function inicializarTabuleiro(){
 		blocos[i].getElementsByTagName('img')[1].style.display = "none";
 
 		blocos[i].onclick = function(){
-
-			if (gameOver) {return;}
-
-
 
 			if(this.getAttribute("vez") == ""){
 
